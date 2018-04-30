@@ -26,10 +26,13 @@
   </head>
   <body>
         <a-scene>
+           <a-assets>
+            <img id="sky" src="https://rawgit.com/tiagosomda/aframe-explorations/glitch/assets/skybox.jpg">
+          </a-assets>
           <a-box color="#EF2D5E" position="0 1 -4" handle-events></a-box>
           
           <a-camera><a-cursor></a-cursor></a-camera>
-          <a-sky color="#333"></a-sky>
+          <a-sky src="#sky" color="#333"></a-sky>
           <a-plane color="#000" rotation="-90 0 0" width="500" height="500"></a-plane>
         </a-scene>
   </body>
